@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaresh's Portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#internships">Internships</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- Home Section -->
+    <div id="home" class="intro">
+        <H4>I AM AMARESH</H4>
+        <h1>FULL STACK CLOUD <br>DEVELOPER</h1>
+        <h6>Contact Me →</h6>
+        <form method="get" action="Software Developer Resume.pdf"><button class="contact-btn">Download Resume</button></form>
+        <div class="image-links">
+            <a href="https://www.linkedin.com/in/amaresh-d-r-9865b3324/" target="_blank">
+                <img src="{% static 'img/Linked in Link.png' %}" alt="LinkedIn Icon">
+            </a>
+            <a href="https://github.com/amareshdr10" target="_blank">
+                <img src="{% static 'img/Github Link.png' %}" alt="Image 2">
+            </a>
+            <a href="https://x.com/amar_freakz" target="_blank">
+                <img src="{% static 'img/x link.png' %}" alt="Image 3">
+            </a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about-content">
+        <h1>ABOUT ME ...</h1>
+        <h2>Everyone has their superpower. For some, it's Music; for others, it's Sports.For me? It has always been Computers.I love building stuff, <br>learning new things, meeting new people — and now, I'm diving deep into the world of Cloud Computing, especially AWS.<br>I just love tech in general. So,if you have something cool to build, feel free to reach out!!</h2>
+        <div class="iron-man">
+            <img src="{% static 'img/iron man.png' %}" alt="Iron Man" class="iron-man-img">
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="projects">
+        <h1>PROJECTS</h1>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <h2>Cafe-on</h2>
+                    <p>A sleek web project simplifying online cafe experiences with seamless functionality</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JAVA SCRIPT</span>
+                        <span>BOOTSTRAP</span>
+                        <span>PHP</span>
+                        <span>MY SQL</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://github.com/amareshdr10/cafe-on"><button>Github</button></a>
+                        <a href="https://amareshdr10.github.io/cafe-on/"><button>Live</button></a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="{% static 'img/cafeon.png' %}" alt="Cafe-on">
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h2>QR Code Ordering System</h2>
+                    <p>This project highlights both front-end elegance and back-end functionality, making it a complete web experience.</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JAVA SCRIPT</span>
+                        <span>API</span>
+                        <span>Sql lite</span>
+                        <span>Django</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://github.com/amareshdr10/Netflix-Card"><button >Uploading Soon</button></a>
+                        <a href="https://amareshdr10.github.io/Netflix-Card/"><button>Hosting Soon</button></a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="{% static 'img/Irani Res.png' %}" alt="irani">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="skills-section">
+        <div class="skills-container">
+            <h1>TECHNICAL SKILLS</h1>
+            <img src="{% static 'img/html.png' %}" alt="HTML" title="HTML">
+            <img src="{% static 'img/css.png' %}" alt="CSS" title="CSS">
+            <img src="{% static 'img/javascript.png' %}" alt="javascript" title="javascript">
+            <img src="{% static 'img/my sql.png' %}" alt="my sql" title="my sql">
+            <img src="{% static 'img/python.png' %}" alt="python" title="python">
+        </div>
+        <div class="non-technical-skills-container">
+            <h1>NON TECHNICAL SKILLS</h1>
+            <img src="{% static 'img/photo shop.png' %}" alt="ps" title="ps">
+            <img src="{% static 'img/premiere pro.png' %}" alt="pp" title="pp">
+            <img src="{% static 'img/canva.png' %}" alt="canva" title="canva">
+            <img src="{% static 'img/figma.png' %}" alt="figma" title="figma">
+        </div>
+    </div>
+
+    <!-- Internships Section -->
+    <div id="internships" class="internships-section">
+        <div class="internships-container">
+            <h1>INTERNSHIPS</h1>
+            <div class="internships-card">
+                <div class="internships-content">
+                    <h2>Full Stack Developer</h2>
+                    <p>Networkz Systems</p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JAVA SCRIPT</span>
+                        <span>BOOTSTRAP</span>
+                        <span>PHP</span>
+                        <span>MY SQL</span>
+                        <span>Django</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="internships-image">
+                    <img src="{% static 'img/netsys logo.png' %}" alt="netsys">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact-me">
+        <h1>CONTACT ME</h1>
+        <h2>Please contact me directly at amareshapplies@gmail.com or through this form.</h2>
+        <div class="form-container">
+            <form>
+              <input type="email" placeholder="Your Email" class="form-input" required>
+              <textarea placeholder="Your Message" class="form-textarea" required></textarea>
+              <button type="submit" class="form-button">
+                Submit
+                <img src="{% static 'img/telegramlogo.png' %}" alt="Telegram Logo" class="icon">
+              </button>
+            </form>
+          </div>
+    </div>
+</body>
+</html>
